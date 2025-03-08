@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0; 
+    height: 100vh; /* Ensure full screen height */
+    display: flex;
+    justify-content: center;
+    background-image:url("\whet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+ } 
+.card {
+    width: 100%;
+    max-width: 80%;
+    max-height: 100%;
+    /* background: linear-gradient(135deg,#53c51f,#3821ce); */
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border: 10px solid blue(30px);
+    border-radius: 20px; 
+    padding: 40px 35px;
+
+    text-align: center;   
+    display: flex;
+}
+.weather
+{
+    margin-right: 30px;
+}
+#i
+{
+    margin-top: 10px;
+    border-radius: 40%;
+}
+.search
+{
+   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.search input
+{
+    width: 80%;
+}
+.search button img
+{
+    width: 100%;
+    background-size:contain;
+    background-position: center;
+    height: auto;
+    border-radius: 50%;
+    background-color: #ebfffc;
+    transition: ease-in 0.m2s;
+}
+.search button img:hover {
+    transform: scale(1.1);
+    transition: transform 0.6ms ease-in-out;
+}
+.search button
+{
+    border: 10 rgb(244, 21, 21);
+    outline:0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 60px ;
+    height: 60px;
+    cursor: pointer;
+
+}
+.search input
+{
+    border: 10 rgb(244, 21, 21);
+    outline:0;
+    background-color:aliceblue;
+    color: #0e8def;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 20px;
+    flex: 1;
+    mix-blend-mode: screen;
+    margin-right: 16px;
+    font-size: 25px ;
+}
+.weather2
+{
+    backdrop-filter: blur(20px);
+}
+.weather2 img
+{
+    width:100px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+}
+.content
+{
+    width: 50%;
+     margin:0px 30px;
+     background-image: url(https://i.scdn.co/image/ab67616d0000b27391027e42977d144b3db3f705);
+     background-repeat: no-repeat;
+     background-position: center;
+     display: flex;
+     justify-content:center;
+     align-items:flex-end;
+     background-size: cover;
+     border-radius: 10px;
+}
+.content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text */
+    border-right: 3px solid black; /* Creates a blinking cursor effect */
+    width: 0; /* Start with no width */
+    animation: typing 3s steps(20, end) infinite, blink 0.7s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.weather2 .details .col img
+{
+    mix-blend-mode:multiply;
+    border-radius: 50%;
+    width: 50px;
+}
+.weather2 .details .wind img
+{
+    mix-blend-mode:multiply;
+    border-radius: 50%;
+    width: 50px;
+}
+.details
+{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 50px;
+}
